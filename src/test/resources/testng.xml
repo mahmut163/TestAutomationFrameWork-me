@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CubeCart test suite" verbose="2" parallel="tests" thread-count="2"  >
+    <listeners>
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter"></listener>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="cubecart test 1">
+<!--        <packages>-->
+<!--            <package name="testng.framework"></package>-->
+<!--        </packages>-->
+        <classes>
+            <class name="testngframework.CubeCartTestNGFrameWorkDemo"></class>
+        </classes>
+    </test>
+    <test name="cubecart test 2">
+        <classes>
+            <class name="testngframework.TestNGDemo1"></class>
+        </classes>
+
+    </test>
+</suite>
